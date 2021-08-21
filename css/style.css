@@ -1,0 +1,31 @@
+#tail {
+  background-image: url("../assets/image/tails.jpeg");
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+}
+
+#head {
+  background-image: url("../assets/image/head.jpg");
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.coin {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #6f0404;
+  text-align: center;
+}
+
+.image {
+  display: grid;
+  grid-template-columns: 0fr 0fr 0fr 0fr;
+  justify-content: center;
+}
