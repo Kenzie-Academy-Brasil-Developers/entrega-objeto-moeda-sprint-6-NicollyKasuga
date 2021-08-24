@@ -1,5 +1,7 @@
 const coin = {
   state: 0,
+  resultImg: [],
+  resultString: [],
 
   flip: function () {
     this.state = Math.floor(Math.random() * 2);
@@ -8,16 +10,28 @@ const coin = {
   toString: function () {
     const coinDiv = document.querySelector(".coin");
     const text = document.createElement("div");
-    if (coin.state === 0) text.innerText = "Head;";
-    if (coin.state === 1) text.innerText = "Tail";
+    if (coin.state === 0) {
+      text.innerText = "Head";
+      this.resultString.push("Head");
+    } else {
+      text.innerText = "Tail";
+      this.resultString.push("Tail");
+    }
     coinDiv.appendChild(text);
   },
 
   toHTML: function () {
     const imageDiv = document.querySelector(".image");
-    const image = document.createElement("div");
-    if (coin.state === 0) image.id = "head";
-    if (coin.state === 1) image.id = "tail";
+    const image = document.createElement("img");
+    if (coin.state === 0) {
+      image.src = "../assets/image/head.jpg";
+      image.classList.add("head");
+      this.resultImg.push("Head");
+    } else {
+      image.src = "../assets/image/tails.jpeg";
+      image.classList.add("tail");
+      this.resultImg.push("Tail");
+    }
     imageDiv.appendChild(image);
   },
 };

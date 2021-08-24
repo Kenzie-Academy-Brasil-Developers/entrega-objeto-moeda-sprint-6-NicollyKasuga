@@ -1,15 +1,11 @@
-#tail {
-  background-image: url("../assets/image/tails.jpeg");
-  background-size: cover;
-  width: 60px;
-  height: 60px;
+.tail {
+  width: 80px;
+  height: 80px;
 }
 
-#head {
-  background-image: url("../assets/image/head.jpg");
-  background-size: cover;
-  width: 60px;
-  height: 60px;
+.head {
+  width: 80px;
+  height: 80px;
 }
 body {
   width: 100vw;
